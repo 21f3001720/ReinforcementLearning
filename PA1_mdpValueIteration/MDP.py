@@ -36,7 +36,3 @@ def read_mdp_from_file(filename):
 
     return MDP(states, actions, gamma, threshold, policy, rewards, transitions)
 
-# Example usage:
-# mdp = read_mdp_from_file("mdp_input.txt")
-# print(mdp.states, mdp.actions, mdp.gamma, mdp.threshold)
-# print(mdp.policy.shape, mdp.rewards.shape, mdp.transitions.shape)
