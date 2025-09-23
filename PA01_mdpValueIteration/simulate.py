@@ -1,6 +1,6 @@
 import sys
 from MDP import read_mdp_from_file
-from valueiteration_pi import valueiteration_pi
+from policyEvaluation import valueIteration_policyEvaluation
 
 def main():
     if len(sys.argv) < 2:
@@ -9,7 +9,7 @@ def main():
 
     mdp_filename = sys.argv[1]
     mdp = read_mdp_from_file(mdp_filename)
-    V, iterations = valueiteration_pi(mdp)
+    V, iterations = valueIteration_policyEvaluation(mdp)
 
     print(f"Value function after {iterations} iterations:")
     for state, val in zip(mdp.states, V):

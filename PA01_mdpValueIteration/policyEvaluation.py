@@ -1,7 +1,7 @@
 import numpy as np
 import MDP
 
-def valueiteration_pi(mdp: MDP):
+def valueIteration_policyEvaluation(mdp: MDP):
     num_states = len(mdp.states)
     num_actions = len(mdp.actions)
     V = np.zeros(num_states)  # Initialize value function to zero for all states
